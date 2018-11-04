@@ -1,0 +1,3 @@
+[submodule "plugins/orgmode/htmlize"]
+	path = plugins/orgmode/htmlize
+	url = https://github.com/hniksic/emacs-htmlize.git
