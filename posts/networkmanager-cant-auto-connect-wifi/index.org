@@ -1,0 +1,23 @@
+#+BEGIN_COMMENT
+.. title: 解决NetworkManager不能开机自连wifi
+.. slug: networkmanager-cant-auto-connect-wifi
+.. date: 2018-11-01 09:11:36 UTC+08:00
+.. author: lampze
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+#+OPTIONS: \n:t
+
+** 通用解决方法
+用root用户打开 =/etc/NetworkManager/system-connections/= 目录下的wifi名称文件。
+找到 =permissions= 所在行，删除 === 后面的所有内容，保存退出就行了。
+
+** plasma-nm用户
+在wifi设置里的常规配置下，选中 =所有用户可以连接到此网络= 就行了。
+
+** 原因猜想
+应该是因为wifi设置为只能指定用户连接，所以开机时没有自动连接。

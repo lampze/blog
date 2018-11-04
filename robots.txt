@@ -1,0 +1,4 @@
+Sitemap: https://lampze.github.io/blog/sitemapindex.xml
+
+User-Agent: *
+Host: lampze.github.io
