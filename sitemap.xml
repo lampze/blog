@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://lampze.github.io/blog/archive.html</loc>
-  <lastmod>2018-11-04T08:12:00Z</lastmod>
+  <lastmod>2018-11-10T12:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://lampze.github.io/blog/categories/</loc>
@@ -28,6 +28,10 @@
  <url>
   <loc>https://lampze.github.io/blog/listings/</loc>
   <lastmod>2018-11-03T13:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://lampze.github.io/blog/posts/gentoo-install-pandoc/</loc>
+  <lastmod>2018-11-09T12:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://lampze.github.io/blog/posts/my-first-blog/</loc>

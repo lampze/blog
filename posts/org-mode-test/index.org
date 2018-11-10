@@ -23,6 +23,7 @@
 ******** 八级标题
 
 * 列表
+{{{TEASER_END}}}
 **** Lord of the Rings
    My favorite scenes are (in this order)
    1. The attack of the Rohirrim
@@ -39,7 +40,7 @@ ORG-LIST-END-MARKER
    - Sean Austin :: He plays Sam, Frodo's friend.  I still remember
      him very well from his role as Mikey Walsh in The Goonies.
 ORG-LIST-END-MARKER
-{{{TEASER_END}}}
+
 * 表格
 | 数量 | 单价 |  总额 |
 |------+------+-------|

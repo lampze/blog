@@ -12,7 +12,8 @@
 <!--[if lt IE 9]>
             <script src="assets/js/html5shiv.min.js"></script>
             <script src="assets/js/respond.min.js"></script>
-        <![endif]--><link rel="prefetch" href="posts/networkmanager-cant-auto-connect-wifi/" type="text/html">
+        <![endif]--><style>body { font-size: 1.6em; }</style>
+<link rel="prefetch" href="posts/gentoo-install-pandoc/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
@@ -48,7 +49,38 @@
 
     <div class="postindex well post-material ">
     
-        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/networkmanager-cant-auto-connect-wifi/" class="u-url">解决NetworkManager不能开机自连wifi</a></h1>
+        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/gentoo-install-pandoc/" class="u-url">gentoo上安装最新版的pandoc</a></h1>
+            <div class="metadata">
+                <span class="byline author vcard">
+                        <i class="mdi-action-face-unlock"></i>
+                    lampze
+                </span>
+                <span class="dateline"><a href="posts/gentoo-install-pandoc/" rel="bookmark">
+                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2018-11-09T20:40:42+08:00" title="2018-11-09 20:40">2018-11-09 20:40</time></a></span>
+            </div>
+            <hr></header><div class="p-summary entry-summary">
+        <div>
+<div id="outline-container-orgaa5f56c" class="outline-2">
+<h2 id="orgaa5f56c">起因</h2>
+<div class="outline-text-2" id="text-orgaa5f56c">
+<p>
+主要是 <code>emacs</code> 的 <code>org-mode</code> 需要 <code>pandoc</code> 才能导出成html格式。而且不知道是那个包引起的，每次启动时都会报错，并提示我 <code>pandoc</code> 的版本过低，这就已经是不能忍的程度了。<br></p>
+</div>
+</div>
+<div id="outline-container-org00ba3dd" class="outline-2">
+<h2 id="org00ba3dd">前言</h2>
+<div class="outline-text-2" id="text-org00ba3dd">
+<p>
+用了 <code>archlinux</code> 和 <code>gentoo</code> 这么久之后，谈谈我对它们的理解吧。<br>
+这两个发行版的包管理都是滚动更新，但它们的理念却有很大的区别。<br><code>archlinux</code> 追求的是最新，为了更新到最新的版本，它牺牲了稳定性。甚至有时更新完后，完全不能正常进入桌面。更不用提它那恐怖的依赖了。<br><code>gentoo</code> 的特点就是它上面的所有软件包括内核都是在用户的机器上现场编译的。这样就不会出现更新完后无法开机的尴尬场面了，因为如果不能安装，软件根本不能通过编译。更妙的是用户还能控制每个包的编译选项，任意增加或减少软件的功能。<br>
+这次的 <code>pandoc</code> 事件如果在 <code>archlinux</code> 上，只需要一行命令，安装上百个包后，问题就解决了。但在 <code>gentoo</code> 上，由于官方没有我想要的版本，我只能加一些第三方的 <code>overlay</code> 还要更改一些系统配置，于是这就引出了下文。<br>
+应该可以这样说： <code>archlinux</code> 更方便， <code>gentoo</code> 更自由。<br></p>
+<p class="more"><a href="posts/gentoo-install-pandoc/">阅读更多…</a></p>
+</div>
+</div>
+</div>
+        </div>
+        </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/networkmanager-cant-auto-connect-wifi/" class="u-url">解决NetworkManager不能开机自连wifi</a></h1>
             <div class="metadata">
                 <span class="byline author vcard">
                         <i class="mdi-action-face-unlock"></i>
@@ -94,29 +126,29 @@
             </div>
             <hr></header><div class="p-summary entry-summary">
         <div>
-<div id="outline-container-org323568b" class="outline-2">
-<h2 id="org323568b">一级标题</h2>
-<div class="outline-text-2" id="text-org323568b">
+<div id="outline-container-org96a48ac" class="outline-2">
+<h2 id="org96a48ac">一级标题</h2>
+<div class="outline-text-2" id="text-org96a48ac">
 </div>
-<div id="outline-container-org2ec24b9" class="outline-3">
-<h3 id="org2ec24b9">二级标题</h3>
-<div class="outline-text-3" id="text-org2ec24b9">
+<div id="outline-container-orgadbd1c1" class="outline-3">
+<h3 id="orgadbd1c1">二级标题</h3>
+<div class="outline-text-3" id="text-orgadbd1c1">
 </div>
-<div id="outline-container-org3f056cf" class="outline-4">
-<h4 id="org3f056cf">三级标题</h4>
-<div class="outline-text-4" id="text-org3f056cf">
+<div id="outline-container-orgf781c84" class="outline-4">
+<h4 id="orgf781c84">三级标题</h4>
+<div class="outline-text-4" id="text-orgf781c84">
 </div>
 <ul class="org-ul">
 <li>
-<a id="org886dd74"></a>四级标题<br><ul class="org-ul">
+<a id="orgbc7aa68"></a>四级标题<br><ul class="org-ul">
 <li>
-<a id="org46a2e03"></a>五级标题<br><ul class="org-ul">
+<a id="org4f53d2b"></a>五级标题<br><ul class="org-ul">
 <li>
-<a id="org870ec7d"></a>六级标题<br><ul class="org-ul">
+<a id="org3968244"></a>六级标题<br><ul class="org-ul">
 <li>
-<a id="org6f94996"></a>七级标题<br><ul class="org-ul">
+<a id="org6decc61"></a>七级标题<br><ul class="org-ul">
 <li>
-<a id="org6e70c53"></a>八级标题<br>
+<a id="org7871c30"></a>八级标题<br>
 </li>
 </ul>
 </li>
@@ -131,53 +163,11 @@
 </div>
 </div>
 
-<div id="outline-container-orgefdad78" class="outline-2">
-<h2 id="orgefdad78">列表</h2>
-<div class="outline-text-2" id="text-orgefdad78">
-</div>
-<ul class="org-ul"><li>
-<a id="org493bef6"></a>Lord of the Rings<br><div class="outline-text-5" id="text-org493bef6">
-<p>
-My favorite scenes are (in this order)<br></p>
-<ol class="org-ol">
-<li>The attack of the Rohirrim<br>
-</li>
-<li>Eowyn's fight with the witch king<br><ul class="org-ul">
-<li>this was already my favorite scene in the book<br>
-</li>
-<li>I really like Miranda Otto.<br>
-</li>
-</ul>
-</li>
-<li>
-<p>
-Peter Jackson being shot by Legolas<br></p>
-<ul class="org-ul">
-<li>on DVD only<br>
-</li>
-</ul>
-<p>
-He makes a really funny face when it happens.<br></p>
-</li>
-</ol>
-<p>
-ORG-LIST-END-MARKER<br>
-   But in the end, no individual scenes matter but the film as a whole.<br>
-   Important actors in this film are:<br></p>
-<dl class="org-dl">
-<dt>Elijah Wood</dt>
-<dd>He plays Frodo<br>
-</dd>
-<dt>Sean Austin</dt>
-<dd>He plays Sam, Frodo's friend.  I still remember<br>
-him very well from his role as Mikey Walsh in The Goonies.<br>
-</dd>
-</dl>
-<p>
-ORG-LIST-END-MARKER<br></p>
+<div id="outline-container-org56f8dfb" class="outline-2">
+<h2 id="org56f8dfb">列表</h2>
+<div class="outline-text-2" id="text-org56f8dfb">
 <p class="more"><a href="posts/org-mode-test/">阅读更多…</a></p>
 </div>
-</li></ul>
 </div>
 </div>
         </div>

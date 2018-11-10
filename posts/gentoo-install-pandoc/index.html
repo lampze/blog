@@ -3,18 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>解决NetworkManager不能开机自连wifi | lampze's blog</title>
+<title>gentoo上安装最新版的pandoc | lampze's blog</title>
 <script src="../../assets/js/pace.min.js"></script><link href="../../assets/css/pace.css" rel="stylesheet">
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="https://lampze.github.io/blog/posts/networkmanager-cant-auto-connect-wifi/">
+<link rel="canonical" href="https://lampze.github.io/blog/posts/gentoo-install-pandoc/">
 <!--[if lt IE 9]>
             <script src="../../assets/js/html5shiv.min.js"></script>
             <script src="../../assets/js/respond.min.js"></script>
         <![endif]--><style>body { font-size: 1.6em; }</style>
 <meta name="author" content="lampze">
-<link rel="prev" href="../org-mode-test/" title="org-mode测试" type="text/html">
-<link rel="next" href="../gentoo-install-pandoc/" title="gentoo上安装最新版的pandoc" type="text/html">
+<link rel="prev" href="../networkmanager-cant-auto-connect-wifi/" title="解决NetworkManager不能开机自连wifi" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
@@ -47,7 +46,7 @@
                 </ul>
 <ul></ul></nav><div class="posts-material col-xs-12 col-sm-9">
                 <div class="col-xs-12 col-md-11 content-material">
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">解决NetworkManager不能开机自连wifi</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">gentoo上安装最新版的pandoc</a></h1>
 <hr>
 <div class="metadata">
             <span class="byline author vcard">
@@ -58,42 +57,85 @@
             </span>
             <span class="dateline">
                 <a href="." rel="bookmark"><i class="mdi-device-access-time"></i>
-                    <time class="published dt-published" datetime="2018-11-01T09:11:36+08:00" itemprop="datePublished" title="2018-11-01 09:11">2018-11-01 09:11</time></a>
+                    <time class="published dt-published" datetime="2018-11-09T20:40:42+08:00" itemprop="datePublished" title="2018-11-09 20:40">2018-11-09 20:40</time></a>
             </span>
         </div>
         
         <hr></header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-org3e550d9" class="outline-2">
-<h2 id="org3e550d9">通用解决方法</h2>
-<div class="outline-text-2" id="text-org3e550d9">
+    <div id="outline-container-orgaa5f56c" class="outline-2">
+<h2 id="orgaa5f56c">起因</h2>
+<div class="outline-text-2" id="text-orgaa5f56c">
 <p>
-用root用户打开 <code>/etc/NetworkManager/system-connections/</code> 目录下的wifi名称文件。<br>
-找到 <code>permissions</code> 所在行，删除 <code>=</code> 后面的所有内容，保存退出就行了。<br></p>
+主要是 <code>emacs</code> 的 <code>org-mode</code> 需要 <code>pandoc</code> 才能导出成html格式。而且不知道是那个包引起的，每次启动时都会报错，并提示我 <code>pandoc</code> 的版本过低，这就已经是不能忍的程度了。<br></p>
 </div>
+</div>
+<div id="outline-container-org00ba3dd" class="outline-2">
+<h2 id="org00ba3dd">前言</h2>
+<div class="outline-text-2" id="text-org00ba3dd">
+<p>
+用了 <code>archlinux</code> 和 <code>gentoo</code> 这么久之后，谈谈我对它们的理解吧。<br>
+这两个发行版的包管理都是滚动更新，但它们的理念却有很大的区别。<br><code>archlinux</code> 追求的是最新，为了更新到最新的版本，它牺牲了稳定性。甚至有时更新完后，完全不能正常进入桌面。更不用提它那恐怖的依赖了。<br><code>gentoo</code> 的特点就是它上面的所有软件包括内核都是在用户的机器上现场编译的。这样就不会出现更新完后无法开机的尴尬场面了，因为如果不能安装，软件根本不能通过编译。更妙的是用户还能控制每个包的编译选项，任意增加或减少软件的功能。<br>
+这次的 <code>pandoc</code> 事件如果在 <code>archlinux</code> 上，只需要一行命令，安装上百个包后，问题就解决了。但在 <code>gentoo</code> 上，由于官方没有我想要的版本，我只能加一些第三方的 <code>overlay</code> 还要更改一些系统配置，于是这就引出了下文。<br>
+应该可以这样说： <code>archlinux</code> 更方便， <code>gentoo</code> 更自由。<br></p>
+<!-- TEASER_END -->
+</div>
+</div>
+<div id="outline-container-org893ae15" class="outline-2">
+<h2 id="org893ae15">安装</h2>
+<div class="outline-text-2" id="text-org893ae15">
+</div>
+<ul class="org-ul">
+<li>
+<a id="org007c2c8"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org007c2c8">
+<div class="highlight"><pre><span></span>layman -a haskell
+</pre></div>
+</div>
+</li>
+<li>
+<a id="org1870d9c"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-org1870d9c">
+<p>
+打开 <code>/etc/portage/repos.conf/layman.conf</code> 修改 <code>haskell</code> 字段为<br></p>
+<div class="highlight"><pre><span></span>[haskell]
+priority = 50
+location = /var/lib/layman/haskell
+layman-type = git
+auto-sync = Yes
+sync-type = git
+sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
+</pre></div>
+</div>
+</li>
+
+<li>
+<a id="org116f9f1"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-org116f9f1">
+<div class="highlight"><pre><span></span>*/*::haskell ~amd64 <span class="c1">#开启 haskell overlay 全部软件包的测试版</span>
+</pre></div>
+</div>
+</li>
+
+<li>
+<a id="orgaf11709"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-orgaf11709">
+<div class="highlight"><pre><span></span>emerge -av pandoc
+</pre></div>
+</div>
+</li>
+</ul>
 </div>
 
-<div id="outline-container-orgd4a144b" class="outline-2">
-<h2 id="orgd4a144b">plasma-nm用户</h2>
-<div class="outline-text-2" id="text-orgd4a144b">
+<div id="outline-container-org87f1c6d" class="outline-2">
+<h2 id="org87f1c6d">注意</h2>
+<div class="outline-text-2" id="text-org87f1c6d">
 <p>
-在wifi设置里的常规配置下，选中 <code>所有用户可以连接到此网络</code> 就行了。<br></p>
-</div>
-</div>
-
-<div id="outline-container-orga94e339" class="outline-2">
-<h2 id="orga94e339">原因猜想</h2>
-<div class="outline-text-2" id="text-orga94e339">
-<p>
-应该是因为wifi设置为只能指定用户连接，所以开机时没有自动连接。<br></p>
+这样配置过后， <code>haskell overlay</code> 上的软件包会全部开启测试版，如果你不能接受的话，就需要手动把 <code>pandoc</code> 依赖的包一个个加入上述的文件。<br>
+具体的做法是：首先加入 <code>app-text/pandoc ~amd64</code> ，然后直接 <code>emerge -av pandoc</code> 。如果有包不能安装，就按 <code>&lt;包所在组&gt;/&lt;包名&gt; ~amd64</code> 的格式加入上述文件。<br>
+一开始我就是这样尝试的，最后还是放弃了，因为有些包会和其它包产生循环依赖。甚至以后每次更新 <code>pandoc</code> 都要重新加入些新包，太累了。<br>
+(ps: 普通用户执行以上命令要用 <code>sudo</code> 应该没有人不知道吧)<br></p>
 </div>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager">
 <li class="previous">
-                <a href="../org-mode-test/" rel="prev" title="org-mode测试">上一篇文章</a>
-            </li>
-            <li class="next">
-                <a href="../gentoo-install-pandoc/" rel="next" title="gentoo上安装最新版的pandoc">下一篇文章</a>
+                <a href="../networkmanager-cant-auto-connect-wifi/" rel="prev" title="解决NetworkManager不能开机自连wifi">上一篇文章</a>
             </li>
         </ul></nav></aside></article>
 </div>
