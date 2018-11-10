@@ -1,0 +1,57 @@
+#+BEGIN_COMMENT
+.. title: gentoo上安装最新版的pandoc
+.. slug: gentoo-install-pandoc
+.. date: 2018-11-09 20:40:42 UTC+08:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+.. author: lampze
+
+#+END_COMMENT
+
+#+OPTIONS: \n:t
+
+* 起因
+主要是 =emacs= 的 =org-mode= 需要 =pandoc= 才能导出成html格式。而且不知道是那个包引起的，每次启动时都会报错，并提示我 =pandoc= 的版本过低，这就已经是不能忍的程度了。
+* 前言
+用了 =archlinux= 和 =gentoo= 这么久之后，谈谈我对它们的理解吧。
+这两个发行版的包管理都是滚动更新，但它们的理念却有很大的区别。
+=archlinux= 追求的是最新，为了更新到最新的版本，它牺牲了稳定性。甚至有时更新完后，完全不能正常进入桌面。更不用提它那恐怖的依赖了。
+=gentoo= 的特点就是它上面的所有软件包括内核都是在用户的机器上现场编译的。这样就不会出现更新完后无法开机的尴尬场面了，因为如果不能安装，软件根本不能通过编译。更妙的是用户还能控制每个包的编译选项，任意增加或减少软件的功能。
+这次的 =pandoc= 事件如果在 =archlinux= 上，只需要一行命令，安装上百个包后，问题就解决了。但在 =gentoo= 上，由于官方没有我想要的版本，我只能加一些第三方的 =overlay= 还要更改一些系统配置，于是这就引出了下文。
+应该可以这样说： =archlinux= 更方便， =gentoo= 更自由。
+{{{TEASER_END}}}
+* 安装
+**** 由于官方的 =pandoc= 版本太低，所以我们要加入 =haskell overlay=
+#+BEGIN_SRC sh
+layman -a haskell
+#+END_SRC
+**** (可选) 开启 =haskell overlay= 的自动更新
+打开 =/etc/portage/repos.conf/layman.conf= 修改 =haskell= 字段为
+#+BEGIN_SRC conf
+[haskell]
+priority = 50
+location = /var/lib/layman/haskell
+layman-type = git
+auto-sync = Yes
+sync-type = git
+sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
+#+END_SRC
+
+**** 打开 =/etc/portage/package.accept_keywords= (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上
+#+BEGIN_SRC sh
+*/*::haskell ~amd64 #开启 haskell overlay 全部软件包的测试版
+#+END_SRC
+
+**** 接下来只需要安装pandoc就行了
+#+BEGIN_SRC sh
+emerge -av pandoc
+#+END_SRC
+
+* 注意
+这样配置过后， =haskell overlay= 上的软件包会全部开启测试版，如果你不能接受的话，就需要手动把 =pandoc= 依赖的包一个个加入上述的文件。
+具体的做法是：首先加入 =app-text/pandoc ~amd64= ，然后直接 =emerge -av pandoc= 。如果有包不能安装，就按 =<包所在组>/<包名> ~amd64= 的格式加入上述文件。
+一开始我就是这样尝试的，最后还是放弃了，因为有些包会和其它包产生循环依赖。甚至以后每次更新 =pandoc= 都要重新加入些新包，太累了。
+(ps: 普通用户执行以上命令要用 =sudo= 应该没有人不知道吧)
