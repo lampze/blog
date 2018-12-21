@@ -62,37 +62,26 @@
         </div>
         
         <hr></header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-orgaa5f56c" class="outline-2">
-<h2 id="orgaa5f56c">起因</h2>
-<div class="outline-text-2" id="text-orgaa5f56c">
+    <div id="outline-container-org1094bcc" class="outline-2">
+<h2 id="org1094bcc">起因</h2>
+<div class="outline-text-2" id="text-org1094bcc">
 <p>
-主要是 <code>emacs</code> 的 <code>org-mode</code> 需要 <code>pandoc</code> 才能导出成html格式。而且不知道是那个包引起的，每次启动时都会报错，并提示我 <code>pandoc</code> 的版本过低，这就已经是不能忍的程度了。<br></p>
+<code>emacs</code> 的 <code>org-mode</code> 需要 <code>pandoc</code> 才能导出成html格式。而且 <code>pandoc</code> 版本太低，开启 <code>emacs</code> 时会报错，这就不能忍了。<br></p>
 </div>
 </div>
-<div id="outline-container-org00ba3dd" class="outline-2">
-<h2 id="org00ba3dd">前言</h2>
-<div class="outline-text-2" id="text-org00ba3dd">
-<p>
-用了 <code>archlinux</code> 和 <code>gentoo</code> 这么久之后，谈谈我对它们的理解吧。<br>
-这两个发行版的包管理都是滚动更新，但它们的理念却有很大的区别。<br><code>archlinux</code> 追求的是最新，为了更新到最新的版本，它牺牲了稳定性。甚至有时更新完后，完全不能正常进入桌面。更不用提它那恐怖的依赖了。<br><code>gentoo</code> 的特点就是它上面的所有软件包括内核都是在用户的机器上现场编译的。这样就不会出现更新完后无法开机的尴尬场面了，因为如果不能安装，软件根本不能通过编译。更妙的是用户还能控制每个包的编译选项，任意增加或减少软件的功能。<br>
-这次的 <code>pandoc</code> 事件如果在 <code>archlinux</code> 上，只需要一行命令，安装上百个包后，问题就解决了。但在 <code>gentoo</code> 上，由于官方没有我想要的版本，我只能加一些第三方的 <code>overlay</code> 还要更改一些系统配置，于是这就引出了下文。<br>
-应该可以这样说： <code>archlinux</code> 更方便， <code>gentoo</code> 更自由。<br></p>
-<!-- TEASER_END -->
-</div>
-</div>
-<div id="outline-container-org893ae15" class="outline-2">
-<h2 id="org893ae15">安装</h2>
-<div class="outline-text-2" id="text-org893ae15">
+<div id="outline-container-org51f5302" class="outline-2">
+<h2 id="org51f5302">安装</h2>
+<div class="outline-text-2" id="text-org51f5302">
 </div>
 <ul class="org-ul">
 <li>
-<a id="org007c2c8"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org007c2c8">
+<a id="org2568f8c"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org2568f8c">
 <div class="highlight"><pre><span></span>layman -a haskell
 </pre></div>
 </div>
 </li>
 <li>
-<a id="org1870d9c"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-org1870d9c">
+<a id="orged5d49b"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-orged5d49b">
 <p>
 打开 <code>/etc/portage/repos.conf/layman.conf</code> 修改 <code>haskell</code> 字段为<br></p>
 <div class="highlight"><pre><span></span>[haskell]
@@ -107,24 +96,25 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
 </li>
 
 <li>
-<a id="org116f9f1"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-org116f9f1">
+<a id="orge9753e2"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-orge9753e2">
 <div class="highlight"><pre><span></span>*/*::haskell ~amd64 <span class="c1">#开启 haskell overlay 全部软件包的测试版</span>
 </pre></div>
 </div>
 </li>
 
 <li>
-<a id="orgaf11709"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-orgaf11709">
+<a id="org05fc529"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-org05fc529">
 <div class="highlight"><pre><span></span>emerge -av pandoc
 </pre></div>
+<!-- TEASER_END -->
 </div>
 </li>
 </ul>
 </div>
 
-<div id="outline-container-org87f1c6d" class="outline-2">
-<h2 id="org87f1c6d">注意</h2>
-<div class="outline-text-2" id="text-org87f1c6d">
+<div id="outline-container-orgdc4479a" class="outline-2">
+<h2 id="orgdc4479a">注意</h2>
+<div class="outline-text-2" id="text-orgdc4479a">
 <p>
 这样配置过后， <code>haskell overlay</code> 上的软件包会全部开启测试版，如果你不能接受的话，就需要手动把 <code>pandoc</code> 依赖的包一个个加入上述的文件。<br>
 具体的做法是：首先加入 <code>app-text/pandoc ~amd64</code> ，然后直接 <code>emerge -av pandoc</code> 。如果有包不能安装，就按 <code>&lt;包所在组&gt;/&lt;包名&gt; ~amd64</code> 的格式加入上述文件。<br>
