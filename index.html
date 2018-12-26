@@ -13,7 +13,7 @@
             <script src="assets/js/html5shiv.min.js"></script>
             <script src="assets/js/respond.min.js"></script>
         <![endif]--><style>body { font-size: 1.6em; }</style>
-<link rel="prefetch" href="posts/gentoo-install-pandoc/" type="text/html">
+<link rel="prefetch" href="posts/install-tim-in-linux/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
@@ -49,7 +49,73 @@
 
     <div class="postindex well post-material ">
     
-        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/gentoo-install-pandoc/" class="u-url">gentoo上安装最新版的pandoc</a></h1>
+        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/install-tim-in-linux/" class="u-url">在Linux上用两步安装TIM</a></h1>
+            <div class="metadata">
+                <span class="byline author vcard">
+                        <i class="mdi-action-face-unlock"></i>
+                    lampze
+                </span>
+                <span class="dateline"><a href="posts/install-tim-in-linux/" rel="bookmark">
+                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2018-12-26T13:40:50+08:00" title="2018-12-26 13:40">2018-12-26 13:40</time></a></span>
+            </div>
+            <hr></header><div class="p-summary entry-summary">
+        <div id="outline-container-orgf6d572a" class="outline-2">
+<h2 id="orgf6d572a">两行命令</h2>
+<div class="outline-text-2" id="text-orgf6d572a">
+<div class="highlight"><pre><span></span>wget http://yun.tzmm.com.cn/index.php/s/5hJNzt2VR9aIEF2/download TIM.AppImage
+chmod +x TIM.AppImage <span class="o">&amp;&amp;</span> ./TIM.AppImage
+</pre></div>
+</div>
+</div>
+
+<div id="outline-container-org6f9ff6d" class="outline-2">
+<h2 id="org6f9ff6d">介绍</h2>
+<div class="outline-text-2" id="text-org6f9ff6d">
+<p>
+项目地址：<a href="https://github.com/askme765cs/Wine-QQ-TIM">Wine-QQ-TIM</a><br>
+作者把 <code>QQ</code> 和 <code>TIM</code> 用<a href="https://github.com/AppImage/AppImageKit">AppImageKit</a>打包了，现在只需要下载打好的包，就能体验完整的 <code>QQ</code> 和 <code>TIM</code> 了。<br>
+跟以前自己安装 <code>wine</code> 比起来，真是省心太多了。<br></p>
+</div>
+</div>
+
+
+<div id="outline-container-org28e9f11" class="outline-2">
+<h2 id="org28e9f11">问题解决</h2>
+<div class="outline-text-2" id="text-org28e9f11">
+<p>
+列出一些我安装时发生的问题，我的系统为 <code>gentoo</code><br></p>
+</div>
+<ul class="org-ul">
+<li>
+<a id="org5a42699"></a>'xterm-256color': unknown terminal type.<br><div class="outline-text-5" id="text-org5a42699">
+<div class="highlight"><pre><span></span><span class="nv">TERM</span><span class="o">=</span>xterm ./TIM.AppImage
+</pre></div>
+<p>
+把上面的命令写在一个sh脚本里更方便<br></p>
+</div>
+</li>
+
+<li>
+<a id="orgf595aba"></a>系统重启后，TIM的数据消失<br><div class="outline-text-5" id="text-orgf595aba">
+<p>
+因为作者把放数据的文件夹放到了 <code>/tmp</code> 下，有些系统会自动清理 <code>/tmp</code> 。<br>
+请自行上网搜索自己发行版怎么关掉 <code>/tmp</code> 的自动清理。<br>
+在此给出 <code>gentoo</code> 的解决办法。<br></p>
+<div class="highlight"><pre><span></span><span class="c1">#打开/etc/init.d/bootmisc</span>
+<span class="c1">#找到并注释下面这些代码</span>
+
+<span class="c1"># Clean up /tmp directories</span>
+<span class="nb">local</span> <span class="nv">tmp</span><span class="o">=</span>
+<span class="k">for</span> tmp in <span class="si">${</span><span class="nv">clean_tmp_dirs</span><span class="k">:-</span><span class="si">${</span><span class="nv">wipe_tmp_dirs</span><span class="p">-/tmp</span><span class="si">}}</span><span class="p">;</span> <span class="k">do</span>
+   mountinfo -q -f tmpfs <span class="s2">"</span><span class="nv">$tmp</span><span class="s2">"</span> <span class="o">||</span> cleanup_tmp_dir <span class="s2">"</span><span class="nv">$tmp</span><span class="s2">"</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+        </div>
+        </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/gentoo-install-pandoc/" class="u-url">gentoo上安装最新版的pandoc</a></h1>
             <div class="metadata">
                 <span class="byline author vcard">
                         <i class="mdi-action-face-unlock"></i>

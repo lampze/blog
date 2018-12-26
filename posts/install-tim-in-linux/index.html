@@ -3,18 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>gentoo上安装最新版的pandoc | lampze's blog</title>
+<title>在Linux上用两步安装TIM | lampze's blog</title>
 <script src="../../assets/js/pace.min.js"></script><link href="../../assets/css/pace.css" rel="stylesheet">
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="https://lampze.github.io/blog/posts/gentoo-install-pandoc/">
+<link rel="canonical" href="https://lampze.github.io/blog/posts/install-tim-in-linux/">
 <!--[if lt IE 9]>
             <script src="../../assets/js/html5shiv.min.js"></script>
             <script src="../../assets/js/respond.min.js"></script>
         <![endif]--><style>body { font-size: 1.6em; }</style>
 <meta name="author" content="lampze">
-<link rel="prev" href="../networkmanager-cant-auto-connect-wifi/" title="解决NetworkManager不能开机自连wifi" type="text/html">
-<link rel="next" href="../install-tim-in-linux/" title="在Linux上用两步安装TIM" type="text/html">
+<link rel="prev" href="../gentoo-install-pandoc/" title="gentoo上安装最新版的pandoc" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
@@ -47,7 +46,7 @@
                 </ul>
 <ul></ul></nav><div class="posts-material col-xs-12 col-sm-9">
                 <div class="col-xs-12 col-md-11 content-material">
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">gentoo上安装最新版的pandoc</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">在Linux上用两步安装TIM</a></h1>
 <hr>
 <div class="metadata">
             <span class="byline author vcard">
@@ -58,78 +57,70 @@
             </span>
             <span class="dateline">
                 <a href="." rel="bookmark"><i class="mdi-device-access-time"></i>
-                    <time class="published dt-published" datetime="2018-11-09T20:40:42+08:00" itemprop="datePublished" title="2018-11-09 20:40">2018-11-09 20:40</time></a>
+                    <time class="published dt-published" datetime="2018-12-26T13:40:50+08:00" itemprop="datePublished" title="2018-12-26 13:40">2018-12-26 13:40</time></a>
             </span>
         </div>
         
         <hr></header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-org1094bcc" class="outline-2">
-<h2 id="org1094bcc">起因</h2>
-<div class="outline-text-2" id="text-org1094bcc">
+    <div id="outline-container-orgf6d572a" class="outline-2">
+<h2 id="orgf6d572a">两行命令</h2>
+<div class="outline-text-2" id="text-orgf6d572a">
+<div class="highlight"><pre><span></span>wget http://yun.tzmm.com.cn/index.php/s/5hJNzt2VR9aIEF2/download TIM.AppImage
+chmod +x TIM.AppImage <span class="o">&amp;&amp;</span> ./TIM.AppImage
+</pre></div>
+</div>
+</div>
+
+<div id="outline-container-org6f9ff6d" class="outline-2">
+<h2 id="org6f9ff6d">介绍</h2>
+<div class="outline-text-2" id="text-org6f9ff6d">
 <p>
-<code>emacs</code> 的 <code>org-mode</code> 需要 <code>pandoc</code> 才能导出成html格式。而且 <code>pandoc</code> 版本太低，开启 <code>emacs</code> 时会报错，这就不能忍了。<br></p>
+项目地址：<a href="https://github.com/askme765cs/Wine-QQ-TIM">Wine-QQ-TIM</a><br>
+作者把 <code>QQ</code> 和 <code>TIM</code> 用<a href="https://github.com/AppImage/AppImageKit">AppImageKit</a>打包了，现在只需要下载打好的包，就能体验完整的 <code>QQ</code> 和 <code>TIM</code> 了。<br>
+跟以前自己安装 <code>wine</code> 比起来，真是省心太多了。<br></p>
 </div>
 </div>
-<div id="outline-container-org51f5302" class="outline-2">
-<h2 id="org51f5302">安装</h2>
-<div class="outline-text-2" id="text-org51f5302">
+
+
+<div id="outline-container-org28e9f11" class="outline-2">
+<h2 id="org28e9f11">问题解决</h2>
+<div class="outline-text-2" id="text-org28e9f11">
+<p>
+列出一些我安装时发生的问题，我的系统为 <code>gentoo</code><br></p>
 </div>
 <ul class="org-ul">
 <li>
-<a id="org2568f8c"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org2568f8c">
-<div class="highlight"><pre><span></span>layman -a haskell
+<a id="org5a42699"></a>'xterm-256color': unknown terminal type.<br><div class="outline-text-5" id="text-org5a42699">
+<div class="highlight"><pre><span></span><span class="nv">TERM</span><span class="o">=</span>xterm ./TIM.AppImage
 </pre></div>
-</div>
-</li>
-<li>
-<a id="orged5d49b"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-orged5d49b">
 <p>
-打开 <code>/etc/portage/repos.conf/layman.conf</code> 修改 <code>haskell</code> 字段为<br></p>
-<div class="highlight"><pre><span></span>[haskell]
-priority = 50
-location = /var/lib/layman/haskell
-layman-type = git
-auto-sync = Yes
-sync-type = git
-sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
-</pre></div>
+把上面的命令写在一个sh脚本里更方便<br></p>
 </div>
 </li>
 
 <li>
-<a id="orge9753e2"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-orge9753e2">
-<div class="highlight"><pre><span></span>*/*::haskell ~amd64 <span class="c1">#开启 haskell overlay 全部软件包的测试版</span>
-</pre></div>
-</div>
-</li>
+<a id="orgf595aba"></a>系统重启后，TIM的数据消失<br><div class="outline-text-5" id="text-orgf595aba">
+<p>
+因为作者把放数据的文件夹放到了 <code>/tmp</code> 下，有些系统会自动清理 <code>/tmp</code> 。<br>
+请自行上网搜索自己发行版怎么关掉 <code>/tmp</code> 的自动清理。<br>
+在此给出 <code>gentoo</code> 的解决办法。<br></p>
+<div class="highlight"><pre><span></span><span class="c1">#打开/etc/init.d/bootmisc</span>
+<span class="c1">#找到并注释下面这些代码</span>
 
-<li>
-<a id="org05fc529"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-org05fc529">
-<div class="highlight"><pre><span></span>emerge -av pandoc
+<span class="c1"># Clean up /tmp directories</span>
+<span class="nb">local</span> <span class="nv">tmp</span><span class="o">=</span>
+<span class="k">for</span> tmp in <span class="si">${</span><span class="nv">clean_tmp_dirs</span><span class="k">:-</span><span class="si">${</span><span class="nv">wipe_tmp_dirs</span><span class="p">-/tmp</span><span class="si">}}</span><span class="p">;</span> <span class="k">do</span>
+   mountinfo -q -f tmpfs <span class="s2">"</span><span class="nv">$tmp</span><span class="s2">"</span> <span class="o">||</span> cleanup_tmp_dir <span class="s2">"</span><span class="nv">$tmp</span><span class="s2">"</span>
+<span class="k">done</span>
 </pre></div>
-<!-- TEASER_END -->
 </div>
 </li>
 </ul>
 </div>
-
-<div id="outline-container-orgdc4479a" class="outline-2">
-<h2 id="orgdc4479a">注意</h2>
-<div class="outline-text-2" id="text-orgdc4479a">
-<p>
-这样配置过后， <code>haskell overlay</code> 上的软件包会全部开启测试版，如果你不能接受的话，就需要手动把 <code>pandoc</code> 依赖的包一个个加入上述的文件。<br>
-具体的做法是：首先加入 <code>app-text/pandoc ~amd64</code> ，然后直接 <code>emerge -av pandoc</code> 。如果有包不能安装，就按 <code>&lt;包所在组&gt;/&lt;包名&gt; ~amd64</code> 的格式加入上述文件。<br>
-一开始我就是这样尝试的，最后还是放弃了，因为有些包会和其它包产生循环依赖。甚至以后每次更新 <code>pandoc</code> 都要重新加入些新包，太累了。<br>
-(ps: 普通用户执行以上命令要用 <code>sudo</code> 应该没有人不知道吧)<br></p>
-</div>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager">
 <li class="previous">
-                <a href="../networkmanager-cant-auto-connect-wifi/" rel="prev" title="解决NetworkManager不能开机自连wifi">上一篇文章</a>
-            </li>
-            <li class="next">
-                <a href="../install-tim-in-linux/" rel="next" title="在Linux上用两步安装TIM">下一篇文章</a>
+                <a href="../gentoo-install-pandoc/" rel="prev" title="gentoo上安装最新版的pandoc">上一篇文章</a>
             </li>
         </ul></nav></aside></article>
 </div>
