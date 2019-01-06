@@ -1,83 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2018 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Wed, 26 Dec 2018 06:23:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>在Linux上用两步安装TIM</title><link>https://lampze.github.io/blog/posts/install-tim-in-linux/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-orgf6d572a" class="outline-2"&gt;
-&lt;h2 id="orgf6d572a"&gt;两行命令&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf6d572a"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Sun, 06 Jan 2019 09:53:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>翻译计划</title><link>https://lampze.github.io/blog/posts/translation-plan/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-org32086f8" class="outline-2"&gt;
+&lt;h2 id="org32086f8"&gt;规划&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32086f8"&gt;
+&lt;p&gt;
+开了博客后才发现，自己太菜了，没有什么好写的，于是我决定开启这个翻译计划。&lt;br&gt;
+我将尽量每天翻译一篇英文文章，正好强迫自己学习英语并获取技术上的最新动态。&lt;br&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgdf20605" class="outline-2"&gt;
+&lt;h2 id="orgdf20605"&gt;格式&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdf20605"&gt;
+&lt;p&gt;
+文章将以 &lt;code&gt;[翻译]&lt;/code&gt; 开头，并在文章开头注明原文链接。&lt;br&gt;
+如果我有什么地方翻译错了或翻译的不好，请给我发email: &lt;a href="mailto:1229408499@qq.com"&gt;1229408499@qq.com&lt;/a&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/translation-plan/</guid><pubDate>Sun, 06 Jan 2019 07:54:43 GMT</pubDate></item><item><title>在Linux上用两步安装TIM</title><link>https://lampze.github.io/blog/posts/install-tim-in-linux/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-org135e19e" class="outline-2"&gt;
+&lt;h2 id="org135e19e"&gt;两行命令&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org135e19e"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget http://yun.tzmm.com.cn/index.php/s/5hJNzt2VR9aIEF2/download TIM.AppImage
 chmod +x TIM.AppImage &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./TIM.AppImage
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6f9ff6d" class="outline-2"&gt;
-&lt;h2 id="org6f9ff6d"&gt;介绍&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6f9ff6d"&gt;
+&lt;div id="outline-container-orgaebe4af" class="outline-2"&gt;
+&lt;h2 id="orgaebe4af"&gt;介绍&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaebe4af"&gt;
 &lt;p&gt;
 项目地址：&lt;a href="https://github.com/askme765cs/Wine-QQ-TIM"&gt;Wine-QQ-TIM&lt;/a&gt;&lt;br&gt;
 作者把 &lt;code&gt;QQ&lt;/code&gt; 和 &lt;code&gt;TIM&lt;/code&gt; 用&lt;a href="https://github.com/AppImage/AppImageKit"&gt;AppImageKit&lt;/a&gt;打包了，现在只需要下载打好的包，就能体验完整的 &lt;code&gt;QQ&lt;/code&gt; 和 &lt;code&gt;TIM&lt;/code&gt; 了。&lt;br&gt;
 跟以前自己安装 &lt;code&gt;wine&lt;/code&gt; 比起来，真是省心太多了。&lt;br&gt;
 &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-org28e9f11" class="outline-2"&gt;
-&lt;h2 id="org28e9f11"&gt;问题解决&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org28e9f11"&gt;
-&lt;p&gt;
-列出一些我安装时发生的问题，我的系统为 &lt;code&gt;gentoo&lt;/code&gt;&lt;br&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a id="org5a42699"&gt;&lt;/a&gt;'xterm-256color': unknown terminal type.&lt;br&gt;
-&lt;div class="outline-text-5" id="text-org5a42699"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;TERM&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;xterm ./TIM.AppImage
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;
-把上面的命令写在一个sh脚本里更方便&lt;br&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-
-&lt;li&gt;&lt;a id="orgf595aba"&gt;&lt;/a&gt;系统重启后，TIM的数据消失&lt;br&gt;
-&lt;div class="outline-text-5" id="text-orgf595aba"&gt;
-&lt;p&gt;
-因为作者把放数据的文件夹放到了 &lt;code&gt;/tmp&lt;/code&gt; 下，有些系统会自动清理 &lt;code&gt;/tmp&lt;/code&gt; 。&lt;br&gt;
-请自行上网搜索自己发行版怎么关掉 &lt;code&gt;/tmp&lt;/code&gt; 的自动清理。&lt;br&gt;
-在此给出 &lt;code&gt;gentoo&lt;/code&gt; 的解决办法。&lt;br&gt;
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#打开/etc/init.d/bootmisc&lt;/span&gt;
-&lt;span class="c1"&gt;#找到并注释下面这些代码&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Clean up /tmp directories&lt;/span&gt;
-&lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; tmp in &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;clean_tmp_dirs&lt;/span&gt;&lt;span class="k"&gt;:-&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;wipe_tmp_dirs&lt;/span&gt;&lt;span class="p"&gt;-/tmp&lt;/span&gt;&lt;span class="si"&gt;}}&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
-   mountinfo -q -f tmpfs &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$tmp&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; cleanup_tmp_dir &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$tmp&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;span class="k"&gt;done&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/install-tim-in-linux/</guid><pubDate>Wed, 26 Dec 2018 05:40:50 GMT</pubDate></item><item><title>gentoo上安装最新版的pandoc</title><link>https://lampze.github.io/blog/posts/gentoo-install-pandoc/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-org1094bcc" class="outline-2"&gt;
-&lt;h2 id="org1094bcc"&gt;起因&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1094bcc"&gt;
+&lt;p&gt;&lt;a href="https://lampze.github.io/blog/posts/install-tim-in-linux/"&gt;阅读更多…&lt;/a&gt; (剩余 1 分钟去阅读)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/install-tim-in-linux/</guid><pubDate>Wed, 26 Dec 2018 05:40:50 GMT</pubDate></item><item><title>gentoo上安装最新版的pandoc</title><link>https://lampze.github.io/blog/posts/gentoo-install-pandoc/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-orgeea4462" class="outline-2"&gt;
+&lt;h2 id="orgeea4462"&gt;起因&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgeea4462"&gt;
 &lt;p&gt;
 &lt;code&gt;emacs&lt;/code&gt; 的 &lt;code&gt;org-mode&lt;/code&gt; 需要 &lt;code&gt;pandoc&lt;/code&gt; 才能导出成html格式。而且 &lt;code&gt;pandoc&lt;/code&gt; 版本太低，开启 &lt;code&gt;emacs&lt;/code&gt; 时会报错，这就不能忍了。&lt;br&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org51f5302" class="outline-2"&gt;
-&lt;h2 id="org51f5302"&gt;安装&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org51f5302"&gt;
+&lt;div id="outline-container-orgabcbbe7" class="outline-2"&gt;
+&lt;h2 id="orgabcbbe7"&gt;安装&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgabcbbe7"&gt;
 &lt;/div&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a id="org2568f8c"&gt;&lt;/a&gt;由于官方的 &lt;code&gt;pandoc&lt;/code&gt; 版本太低，所以我们要加入 &lt;code&gt;haskell overlay&lt;/code&gt;&lt;br&gt;
-&lt;div class="outline-text-5" id="text-org2568f8c"&gt;
+&lt;li&gt;&lt;a id="org15bb055"&gt;&lt;/a&gt;由于官方的 &lt;code&gt;pandoc&lt;/code&gt; 版本太低，所以我们要加入 &lt;code&gt;haskell overlay&lt;/code&gt;&lt;br&gt;
+&lt;div class="outline-text-5" id="text-org15bb055"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;layman -a haskell
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id="orged5d49b"&gt;&lt;/a&gt;(可选) 开启 &lt;code&gt;haskell overlay&lt;/code&gt; 的自动更新&lt;br&gt;
-&lt;div class="outline-text-5" id="text-orged5d49b"&gt;
+&lt;li&gt;&lt;a id="org8607f2d"&gt;&lt;/a&gt;(可选) 开启 &lt;code&gt;haskell overlay&lt;/code&gt; 的自动更新&lt;br&gt;
+&lt;div class="outline-text-5" id="text-org8607f2d"&gt;
 &lt;p&gt;
 打开 &lt;code&gt;/etc/portage/repos.conf/layman.conf&lt;/code&gt; 修改 &lt;code&gt;haskell&lt;/code&gt; 字段为&lt;br&gt;
 &lt;/p&gt;
@@ -92,20 +69,20 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="orge9753e2"&gt;&lt;/a&gt;打开 &lt;code&gt;/etc/portage/package.accept_keywords&lt;/code&gt; (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上&lt;br&gt;
-&lt;div class="outline-text-5" id="text-orge9753e2"&gt;
+&lt;li&gt;&lt;a id="org953fe5a"&gt;&lt;/a&gt;打开 &lt;code&gt;/etc/portage/package.accept_keywords&lt;/code&gt; (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上&lt;br&gt;
+&lt;div class="outline-text-5" id="text-org953fe5a"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*/*::haskell ~amd64 &lt;span class="c1"&gt;#开启 haskell overlay 全部软件包的测试版&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="org05fc529"&gt;&lt;/a&gt;接下来只需要安装pandoc就行了&lt;br&gt;
-&lt;div class="outline-text-5" id="text-org05fc529"&gt;
+&lt;li&gt;&lt;a id="orgb3fbfd2"&gt;&lt;/a&gt;接下来只需要安装pandoc就行了&lt;br&gt;
+&lt;div class="outline-text-5" id="text-orgb3fbfd2"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;emerge -av pandoc
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://lampze.github.io/blog/posts/gentoo-install-pandoc/"&gt;阅读更多…&lt;/a&gt; (剩余 1 分钟去阅读)&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/gentoo-install-pandoc/</guid><pubDate>Fri, 09 Nov 2018 12:40:42 GMT</pubDate></item><item><title>解决NetworkManager不能开机自连wifi</title><link>https://lampze.github.io/blog/posts/networkmanager-cant-auto-connect-wifi/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-orgb93fe2f" class="outline-2"&gt;
-&lt;h2 id="orgb93fe2f"&gt;通用解决方法&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb93fe2f"&gt;
+&lt;p&gt;&lt;a href="https://lampze.github.io/blog/posts/gentoo-install-pandoc/"&gt;阅读更多…&lt;/a&gt; (剩余 1 分钟去阅读)&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/gentoo-install-pandoc/</guid><pubDate>Fri, 09 Nov 2018 12:40:42 GMT</pubDate></item><item><title>解决NetworkManager不能开机自连wifi</title><link>https://lampze.github.io/blog/posts/networkmanager-cant-auto-connect-wifi/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-org87f94a7" class="outline-2"&gt;
+&lt;h2 id="org87f94a7"&gt;通用解决方法&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org87f94a7"&gt;
 &lt;p&gt;
 用root用户打开 &lt;code&gt;/etc/NetworkManager/system-connections/&lt;/code&gt; 目录下的wifi名称文件。&lt;br&gt;
 找到 &lt;code&gt;permissions&lt;/code&gt; 所在行，删除 &lt;code&gt;=&lt;/code&gt; 后面的所有内容，保存退出就行了。&lt;br&gt;
@@ -113,18 +90,18 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org736cfc2" class="outline-2"&gt;
-&lt;h2 id="org736cfc2"&gt;plasma-nm用户&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org736cfc2"&gt;
+&lt;div id="outline-container-orgd001269" class="outline-2"&gt;
+&lt;h2 id="orgd001269"&gt;plasma-nm用户&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd001269"&gt;
 &lt;p&gt;
 在wifi设置里的 &lt;code&gt;常规配置&lt;/code&gt; 下，选中 &lt;code&gt;所有用户可以连接到此网络&lt;/code&gt; 就行了。&lt;br&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org94b2688" class="outline-2"&gt;
-&lt;h2 id="org94b2688"&gt;原因猜想&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org94b2688"&gt;
+&lt;div id="outline-container-org9eee17e" class="outline-2"&gt;
+&lt;h2 id="org9eee17e"&gt;原因猜想&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9eee17e"&gt;
 &lt;p&gt;
 应该是因为wifi设置为只能指定用户连接，所以开机时没有自动连接。&lt;br&gt;
 &lt;/p&gt;

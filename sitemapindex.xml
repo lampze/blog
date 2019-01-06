@@ -6,15 +6,27 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://lampze.github.io/blog/categories/cat_gentoo.xml</loc>
+  <lastmod>2019-01-06T09:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://lampze.github.io/blog/categories/gentoo.xml</loc>
+  <lastmod>2019-01-06T09:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://lampze.github.io/blog/categories/install.xml</loc>
+  <lastmod>2019-01-06T09:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://lampze.github.io/blog/galleries/rss.xml</loc>
-  <lastmod>2018-11-10T12:55:00Z</lastmod>
+  <lastmod>2019-01-06T09:14:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://lampze.github.io/blog/rss.xml</loc>
-  <lastmod>2018-12-26T05:45:00Z</lastmod>
+  <lastmod>2019-01-06T09:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://lampze.github.io/blog/sitemap.xml</loc>
-  <lastmod>2018-12-26T05:45:00Z</lastmod>
+  <lastmod>2019-01-06T09:44:00Z</lastmod>
  </sitemap>
 </sitemapindex>

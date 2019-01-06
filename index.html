@@ -13,7 +13,7 @@
             <script src="assets/js/html5shiv.min.js"></script>
             <script src="assets/js/respond.min.js"></script>
         <![endif]--><style>body { font-size: 1.6em; }</style>
-<link rel="prefetch" href="posts/install-tim-in-linux/" type="text/html">
+<link rel="prefetch" href="posts/translation-plan/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
@@ -49,7 +49,35 @@
 
     <div class="postindex well post-material ">
     
-        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/install-tim-in-linux/" class="u-url">在Linux上用两步安装TIM</a></h1>
+        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/translation-plan/" class="u-url">翻译计划</a></h1>
+            <div class="metadata">
+                <span class="byline author vcard">
+                        <i class="mdi-action-face-unlock"></i>
+                    lampze
+                </span>
+                <span class="dateline"><a href="posts/translation-plan/" rel="bookmark">
+                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2019-01-06T15:54:43+08:00" title="2019-01-06 15:54">2019-01-06 15:54</time></a></span>
+            </div>
+            <hr></header><div class="p-summary entry-summary">
+        <div id="outline-container-org32086f8" class="outline-2">
+<h2 id="org32086f8">规划</h2>
+<div class="outline-text-2" id="text-org32086f8">
+<p>
+开了博客后才发现，自己太菜了，没有什么好写的，于是我决定开启这个翻译计划。<br>
+我将尽量每天翻译一篇英文文章，正好强迫自己学习英语并获取技术上的最新动态。<br></p>
+</div>
+</div>
+
+<div id="outline-container-orgdf20605" class="outline-2">
+<h2 id="orgdf20605">格式</h2>
+<div class="outline-text-2" id="text-orgdf20605">
+<p>
+文章将以 <code>[翻译]</code> 开头，并在文章开头注明原文链接。<br>
+如果我有什么地方翻译错了或翻译的不好，请给我发email: <a href="mailto:1229408499@qq.com">1229408499@qq.com</a><br></p>
+</div>
+</div>
+        </div>
+        </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/install-tim-in-linux/" class="u-url">在Linux上用两步安装TIM</a></h1>
             <div class="metadata">
                 <span class="byline author vcard">
                         <i class="mdi-action-face-unlock"></i>
@@ -59,60 +87,26 @@
                     <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2018-12-26T13:40:50+08:00" title="2018-12-26 13:40">2018-12-26 13:40</time></a></span>
             </div>
             <hr></header><div class="p-summary entry-summary">
-        <div id="outline-container-orgf6d572a" class="outline-2">
-<h2 id="orgf6d572a">两行命令</h2>
-<div class="outline-text-2" id="text-orgf6d572a">
+        <div>
+<div id="outline-container-org135e19e" class="outline-2">
+<h2 id="org135e19e">两行命令</h2>
+<div class="outline-text-2" id="text-org135e19e">
 <div class="highlight"><pre><span></span>wget http://yun.tzmm.com.cn/index.php/s/5hJNzt2VR9aIEF2/download TIM.AppImage
 chmod +x TIM.AppImage <span class="o">&amp;&amp;</span> ./TIM.AppImage
 </pre></div>
 </div>
 </div>
 
-<div id="outline-container-org6f9ff6d" class="outline-2">
-<h2 id="org6f9ff6d">介绍</h2>
-<div class="outline-text-2" id="text-org6f9ff6d">
+<div id="outline-container-orgaebe4af" class="outline-2">
+<h2 id="orgaebe4af">介绍</h2>
+<div class="outline-text-2" id="text-orgaebe4af">
 <p>
 项目地址：<a href="https://github.com/askme765cs/Wine-QQ-TIM">Wine-QQ-TIM</a><br>
 作者把 <code>QQ</code> 和 <code>TIM</code> 用<a href="https://github.com/AppImage/AppImageKit">AppImageKit</a>打包了，现在只需要下载打好的包，就能体验完整的 <code>QQ</code> 和 <code>TIM</code> 了。<br>
 跟以前自己安装 <code>wine</code> 比起来，真是省心太多了。<br></p>
+<p class="more"><a href="posts/install-tim-in-linux/">阅读更多…</a></p>
 </div>
 </div>
-
-
-<div id="outline-container-org28e9f11" class="outline-2">
-<h2 id="org28e9f11">问题解决</h2>
-<div class="outline-text-2" id="text-org28e9f11">
-<p>
-列出一些我安装时发生的问题，我的系统为 <code>gentoo</code><br></p>
-</div>
-<ul class="org-ul">
-<li>
-<a id="org5a42699"></a>'xterm-256color': unknown terminal type.<br><div class="outline-text-5" id="text-org5a42699">
-<div class="highlight"><pre><span></span><span class="nv">TERM</span><span class="o">=</span>xterm ./TIM.AppImage
-</pre></div>
-<p>
-把上面的命令写在一个sh脚本里更方便<br></p>
-</div>
-</li>
-
-<li>
-<a id="orgf595aba"></a>系统重启后，TIM的数据消失<br><div class="outline-text-5" id="text-orgf595aba">
-<p>
-因为作者把放数据的文件夹放到了 <code>/tmp</code> 下，有些系统会自动清理 <code>/tmp</code> 。<br>
-请自行上网搜索自己发行版怎么关掉 <code>/tmp</code> 的自动清理。<br>
-在此给出 <code>gentoo</code> 的解决办法。<br></p>
-<div class="highlight"><pre><span></span><span class="c1">#打开/etc/init.d/bootmisc</span>
-<span class="c1">#找到并注释下面这些代码</span>
-
-<span class="c1"># Clean up /tmp directories</span>
-<span class="nb">local</span> <span class="nv">tmp</span><span class="o">=</span>
-<span class="k">for</span> tmp in <span class="si">${</span><span class="nv">clean_tmp_dirs</span><span class="k">:-</span><span class="si">${</span><span class="nv">wipe_tmp_dirs</span><span class="p">-/tmp</span><span class="si">}}</span><span class="p">;</span> <span class="k">do</span>
-   mountinfo -q -f tmpfs <span class="s2">"</span><span class="nv">$tmp</span><span class="s2">"</span> <span class="o">||</span> cleanup_tmp_dir <span class="s2">"</span><span class="nv">$tmp</span><span class="s2">"</span>
-<span class="k">done</span>
-</pre></div>
-</div>
-</li>
-</ul>
 </div>
         </div>
         </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/gentoo-install-pandoc/" class="u-url">gentoo上安装最新版的pandoc</a></h1>
@@ -126,26 +120,26 @@ chmod +x TIM.AppImage <span class="o">&amp;&amp;</span> ./TIM.AppImage
             </div>
             <hr></header><div class="p-summary entry-summary">
         <div>
-<div id="outline-container-org1094bcc" class="outline-2">
-<h2 id="org1094bcc">起因</h2>
-<div class="outline-text-2" id="text-org1094bcc">
+<div id="outline-container-orgeea4462" class="outline-2">
+<h2 id="orgeea4462">起因</h2>
+<div class="outline-text-2" id="text-orgeea4462">
 <p>
 <code>emacs</code> 的 <code>org-mode</code> 需要 <code>pandoc</code> 才能导出成html格式。而且 <code>pandoc</code> 版本太低，开启 <code>emacs</code> 时会报错，这就不能忍了。<br></p>
 </div>
 </div>
-<div id="outline-container-org51f5302" class="outline-2">
-<h2 id="org51f5302">安装</h2>
-<div class="outline-text-2" id="text-org51f5302">
+<div id="outline-container-orgabcbbe7" class="outline-2">
+<h2 id="orgabcbbe7">安装</h2>
+<div class="outline-text-2" id="text-orgabcbbe7">
 </div>
 <ul class="org-ul">
 <li>
-<a id="org2568f8c"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org2568f8c">
+<a id="org15bb055"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org15bb055">
 <div class="highlight"><pre><span></span>layman -a haskell
 </pre></div>
 </div>
 </li>
 <li>
-<a id="orged5d49b"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-orged5d49b">
+<a id="org8607f2d"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-org8607f2d">
 <p>
 打开 <code>/etc/portage/repos.conf/layman.conf</code> 修改 <code>haskell</code> 字段为<br></p>
 <div class="highlight"><pre><span></span>[haskell]
@@ -160,14 +154,14 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
 </li>
 
 <li>
-<a id="orge9753e2"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-orge9753e2">
+<a id="org953fe5a"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-org953fe5a">
 <div class="highlight"><pre><span></span>*/*::haskell ~amd64 <span class="c1">#开启 haskell overlay 全部软件包的测试版</span>
 </pre></div>
 </div>
 </li>
 
 <li>
-<a id="org05fc529"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-org05fc529">
+<a id="orgb3fbfd2"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-orgb3fbfd2">
 <div class="highlight"><pre><span></span>emerge -av pandoc
 </pre></div>
 <p class="more"><a href="posts/gentoo-install-pandoc/">阅读更多…</a></p>
@@ -187,26 +181,26 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
                     <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2018-11-01T09:11:36+08:00" title="2018-11-01 09:11">2018-11-01 09:11</time></a></span>
             </div>
             <hr></header><div class="p-summary entry-summary">
-        <div id="outline-container-orgb93fe2f" class="outline-2">
-<h2 id="orgb93fe2f">通用解决方法</h2>
-<div class="outline-text-2" id="text-orgb93fe2f">
+        <div id="outline-container-org87f94a7" class="outline-2">
+<h2 id="org87f94a7">通用解决方法</h2>
+<div class="outline-text-2" id="text-org87f94a7">
 <p>
 用root用户打开 <code>/etc/NetworkManager/system-connections/</code> 目录下的wifi名称文件。<br>
 找到 <code>permissions</code> 所在行，删除 <code>=</code> 后面的所有内容，保存退出就行了。<br></p>
 </div>
 </div>
 
-<div id="outline-container-org736cfc2" class="outline-2">
-<h2 id="org736cfc2">plasma-nm用户</h2>
-<div class="outline-text-2" id="text-org736cfc2">
+<div id="outline-container-orgd001269" class="outline-2">
+<h2 id="orgd001269">plasma-nm用户</h2>
+<div class="outline-text-2" id="text-orgd001269">
 <p>
 在wifi设置里的 <code>常规配置</code> 下，选中 <code>所有用户可以连接到此网络</code> 就行了。<br></p>
 </div>
 </div>
 
-<div id="outline-container-org94b2688" class="outline-2">
-<h2 id="org94b2688">原因猜想</h2>
-<div class="outline-text-2" id="text-org94b2688">
+<div id="outline-container-org9eee17e" class="outline-2">
+<h2 id="org9eee17e">原因猜想</h2>
+<div class="outline-text-2" id="text-org9eee17e">
 <p>
 应该是因为wifi设置为只能指定用户连接，所以开机时没有自动连接。<br></p>
 </div>
@@ -325,7 +319,7 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
                 <h4 class="modal-title">lampze's blog credits</h4>
               </div>
               <div class="modal-body">
-                    Contents © 2018         <a href="mailto:1229408499@qq.com">lampze</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+                    Contents © 2019         <a href="mailto:1229408499@qq.com">lampze</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
                     
               </div>
               <div class="modal-footer">

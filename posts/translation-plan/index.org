@@ -1,0 +1,22 @@
+#+BEGIN_COMMENT
+.. title: 翻译计划
+.. slug: translation-plan
+.. date: 2019-01-06 15:54:43 UTC+08:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+.. author: lampze
+
+#+END_COMMENT
+
+#+OPTIONS: \n:t
+
+* 规划
+开了博客后才发现，自己太菜了，没有什么好写的，于是我决定开启这个翻译计划。
+我将尽量每天翻译一篇英文文章，正好强迫自己学习英语并获取技术上的最新动态。
+
+* 格式
+文章将以 =[翻译]= 开头，并在文章开头注明原文链接。
+如果我有什么地方翻译错了或翻译的不好，请给我发email: [[mailto:1229408499@qq.com][1229408499@qq.com]]

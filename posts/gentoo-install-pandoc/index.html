@@ -63,26 +63,26 @@
         </div>
         
         <hr></header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-org1094bcc" class="outline-2">
-<h2 id="org1094bcc">起因</h2>
-<div class="outline-text-2" id="text-org1094bcc">
+    <div id="outline-container-orgeea4462" class="outline-2">
+<h2 id="orgeea4462">起因</h2>
+<div class="outline-text-2" id="text-orgeea4462">
 <p>
 <code>emacs</code> 的 <code>org-mode</code> 需要 <code>pandoc</code> 才能导出成html格式。而且 <code>pandoc</code> 版本太低，开启 <code>emacs</code> 时会报错，这就不能忍了。<br></p>
 </div>
 </div>
-<div id="outline-container-org51f5302" class="outline-2">
-<h2 id="org51f5302">安装</h2>
-<div class="outline-text-2" id="text-org51f5302">
+<div id="outline-container-orgabcbbe7" class="outline-2">
+<h2 id="orgabcbbe7">安装</h2>
+<div class="outline-text-2" id="text-orgabcbbe7">
 </div>
 <ul class="org-ul">
 <li>
-<a id="org2568f8c"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org2568f8c">
+<a id="org15bb055"></a>由于官方的 <code>pandoc</code> 版本太低，所以我们要加入 <code>haskell overlay</code><br><div class="outline-text-5" id="text-org15bb055">
 <div class="highlight"><pre><span></span>layman -a haskell
 </pre></div>
 </div>
 </li>
 <li>
-<a id="orged5d49b"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-orged5d49b">
+<a id="org8607f2d"></a>(可选) 开启 <code>haskell overlay</code> 的自动更新<br><div class="outline-text-5" id="text-org8607f2d">
 <p>
 打开 <code>/etc/portage/repos.conf/layman.conf</code> 修改 <code>haskell</code> 字段为<br></p>
 <div class="highlight"><pre><span></span>[haskell]
@@ -97,14 +97,14 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
 </li>
 
 <li>
-<a id="orge9753e2"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-orge9753e2">
+<a id="org953fe5a"></a>打开 <code>/etc/portage/package.accept_keywords</code> (如果是目录，就在这个目录下新建一个文件，名字无所谓) 加上<br><div class="outline-text-5" id="text-org953fe5a">
 <div class="highlight"><pre><span></span>*/*::haskell ~amd64 <span class="c1">#开启 haskell overlay 全部软件包的测试版</span>
 </pre></div>
 </div>
 </li>
 
 <li>
-<a id="org05fc529"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-org05fc529">
+<a id="orgb3fbfd2"></a>接下来只需要安装pandoc就行了<br><div class="outline-text-5" id="text-orgb3fbfd2">
 <div class="highlight"><pre><span></span>emerge -av pandoc
 </pre></div>
 <!-- TEASER_END -->
@@ -113,13 +113,19 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
 </ul>
 </div>
 
-<div id="outline-container-orgdc4479a" class="outline-2">
-<h2 id="orgdc4479a">注意</h2>
-<div class="outline-text-2" id="text-orgdc4479a">
+<div id="outline-container-org0336a4e" class="outline-2">
+<h2 id="org0336a4e">注意</h2>
+<div class="outline-text-2" id="text-org0336a4e">
 <p>
-这样配置过后， <code>haskell overlay</code> 上的软件包会全部开启测试版，如果你不能接受的话，就需要手动把 <code>pandoc</code> 依赖的包一个个加入上述的文件。<br>
-具体的做法是：首先加入 <code>app-text/pandoc ~amd64</code> ，然后直接 <code>emerge -av pandoc</code> 。如果有包不能安装，就按 <code>&lt;包所在组&gt;/&lt;包名&gt; ~amd64</code> 的格式加入上述文件。<br>
-一开始我就是这样尝试的，最后还是放弃了，因为有些包会和其它包产生循环依赖。甚至以后每次更新 <code>pandoc</code> 都要重新加入些新包，太累了。<br>
+这样配置过后， <code>haskell overlay</code> 上的软件包会全部开启测试版，如果你不能接受的话，就需要手动把 <code>pandoc</code> 依赖的包一个个加入上述的文件。<br></p>
+
+<p>
+具体的做法是：首先加入 <code>app-text/pandoc ~amd64</code> ，然后直接 <code>emerge -av pandoc</code> 。如果有包不能安装，就按 <code>&lt;包所在组&gt;/&lt;包名&gt; ~amd64</code> 的格式加入上述文件。<br></p>
+
+<p>
+一开始我就是这样尝试的，最后还是放弃了，因为有些包会和其它包产生循环依赖。甚至以后每次更新 <code>pandoc</code> 都要重新加入些新包，太累了。<br></p>
+
+<p>
 (ps: 普通用户执行以上命令要用 <code>sudo</code> 应该没有人不知道吧)<br></p>
 </div>
 </div>
@@ -146,7 +152,7 @@ sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
                 <h4 class="modal-title">lampze's blog credits</h4>
               </div>
               <div class="modal-body">
-                    Contents © 2018         <a href="mailto:1229408499@qq.com">lampze</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+                    Contents © 2019         <a href="mailto:1229408499@qq.com">lampze</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
                     
               </div>
               <div class="modal-footer">
