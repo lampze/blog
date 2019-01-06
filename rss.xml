@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Sun, 06 Jan 2019 13:01:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-org82ee11b" class="outline-2"&gt;
-&lt;h2 id="org82ee11b"&gt;前言&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org82ee11b"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Sun, 06 Jan 2019 13:38:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-org280d372" class="outline-2"&gt;
+&lt;h2 id="org280d372"&gt;前言&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org280d372"&gt;
 &lt;p&gt;
 原文链接：&lt;a href="http://geocar.sdf1.org/numbers.html"&gt;点击跳转&lt;/a&gt;&lt;br&gt;
 发现方式：&lt;a href="https://news.ycombinator.com"&gt;Hacker News&lt;/a&gt;&lt;br&gt;
@@ -9,9 +9,9 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgce96d2d" class="outline-2"&gt;
-&lt;h2 id="orgce96d2d"&gt;正文&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgce96d2d"&gt;
+&lt;div id="outline-container-org7eb6e10" class="outline-2"&gt;
+&lt;h2 id="org7eb6e10"&gt;正文&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7eb6e10"&gt;
 &lt;p&gt;
 &lt;b&gt;一个简单的问题：&lt;/b&gt;&lt;br&gt;
 &lt;/p&gt;
@@ -131,17 +131,17 @@ Perl得到正确答案的方案：&lt;br&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orga319992" class="outline-2"&gt;
-&lt;h2 id="orga319992"&gt;博主的话&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga319992"&gt;
+&lt;div id="outline-container-org0bc12f9" class="outline-2"&gt;
+&lt;h2 id="org0bc12f9"&gt;博主的话&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0bc12f9"&gt;
 &lt;p&gt;
 在翻译过程中深刻的体会到了我英语有多菜，这么短的文章居然花了我1个小时。&lt;br&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
 因为这篇文章只列举了结果，没有解释为什么，所以我又去查了一下。&lt;br&gt;
-这篇文章解释了原因：&lt;a href="http://www.ruanyifeng.com/blog/2010/06/ieee_floating-point_representation.html"&gt;浮点数的二进制表示&lt;/a&gt;&lt;br&gt;
-好奇的话可以看一下。&lt;br&gt;
+但只找到了浮点数产生这种类型错误的原因，整数产生问题的原因还没找到。&lt;br&gt;
+研究出来后我再写篇博客吧&lt;br&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</guid><pubDate>Sun, 06 Jan 2019 11:50:51 GMT</pubDate></item><item><title>翻译计划</title><link>https://lampze.github.io/blog/posts/translation-plan/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-org32086f8" class="outline-2"&gt;
