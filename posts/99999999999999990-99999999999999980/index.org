@@ -1,0 +1,128 @@
+#+BEGIN_COMMENT
+.. title: [翻译] 9999999999999999.0 - 9999999999999998.0
+.. slug: 99999999999999990-99999999999999980
+.. date: 2019-01-06 19:50:51 UTC+08:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+.. author: lampze
+
+#+END_COMMENT
+
+#+OPTIONS: \n:t
+
+* 前言
+原文链接：[[http://geocar.sdf1.org/numbers.html][点击跳转]]
+发现方式：[[https://news.ycombinator.com][Hacker News]]
+
+* 正文
+*一个简单的问题：*
+#+BEGIN_QUOTE
+9999999999999999.0 - 9999999999999998.0
+#+END_QUOTE
+
+您最喜欢的语言能给出正确的答案吗？
+
+#+BEGIN_EXPORT html
+<style>
+table[Attributes Style] {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    -webkit-border-horizontal-spacing: 8px;
+    -webkit-border-vertical-spacing: 8px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th {
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+}
+td {
+    font-family: monospace;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+    border: none;
+}
+td span, .w {
+    color: red;
+    font-weight: bold;
+}
+</style>
+<table border="0" cellspacing="8"><tbody>
+<tr><th>Ruby:</th><td>irb(main):001:0&gt; 9999999999999999.0 - 9999999999999998.0<br><span>2.0</span></td></tr>
+<tr><th>Java:</th><td>public class Foo{public static void main(String args[]){System.out.println(9999999999999999.0-9999999999999998.0);}}<br><span>2.0</span></td></tr>
+<tr><th>Python:</th><td>&gt;&gt;&gt; 9999999999999999.0 - 9999999999999998.0<br><span>2.0</span></td></tr>
+<tr><th>Rebol:</th><td>&gt;&gt; 9999999999999999.0 - 9999999999999998.0<br>== <span>2.0</span></td></tr>
+<tr><th>Haskell:</th><td>Prelude&gt; 9999999999999999.0 - 9999999999999998.0<br><span>2.0</span></td></tr>
+<tr><th>TCL:</th><td>% expr "9999999999999999.0-9999999999999998.0"<br><span>0.0</span></td></tr>
+<tr><th>Emacs&nbsp;Lisp:</th><td>ELISP&gt; (- 9999999999999999.0 9999999999999998.0)<br><span>2.0</span></td></tr>
+<tr><th>Common–Lisp:</th><td>[1]&gt; (- 9999999999999999.0 9999999999999998.0)<br><span>0.0</span></td></tr>
+<tr><th>Maxima:</th><td>(%i1) 9999999999999999.0-9999999999999998.0;<br>(%o1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span>2.0</span></td></tr>
+<tr><th>Google:</th><td><a class="w" rel="nofollow,noindex" target="_new" href="http://www.google.com/search?q=9999999999999999.0-9999999999999998.0"><span>0</span></a></td></tr>
+<tr><th>K/Q:</th><td>q)9999999999999999.0-9999999999999998.0<br><span>2f</span></td></tr>
+<tr><th>R:</th><td>&gt; 9999999999999999.0-9999999999999998.0<br>[1] <span>2</span></td></tr>
+<tr><th>Erlang:</th><td>1&gt; 9999999999999999.0-9999999999999998.0 .<br><span>2.0</span></td></tr>
+<tr><th>C:</th><td>main(){printf("%lf\n",(double)9999999999999999.0-9999999999999998.0);}<br><span>2.000000</span></td></tr>
+<tr><th>AWK:</th><td>$ awk 'END{print 9999999999999999.0-9999999999999998.0}'&lt;/dev/null<br><span>2</span></td></tr>
+<tr><th>GoLang:</th><td>var a = 9999999999999999.0; var b = 9999999999999998.0; fmt.Printf("%f\n", a-b)<br><span>2.000000</span></td></tr>
+<tr><th>Perl:</th><td>$ perl -e 'print 9999999999999999.0-9999999999999998.0;print "\n";'<br><span>2.0</span></td></tr>
+<tr><th>Perl6:</th><td>$ perl6 -e 'print 9999999999999999.0-9999999999999998.0;print "\n";'<br><b>1</b></td></tr>
+<tr><th>Wolfram:</th><td><a class="w" rel="nofollow,noindex" target="_new" href="https://www.wolframalpha.com/input/?i=9999999999999999.0-9999999999999998.0"><b>1</b></a></td></tr>
+</tbody></table>
+#+END_EXPORT
+
+一些结果让我感到惊讶。他们让你感到大吃一惊吗？
+
+请注意，可以使用特殊的方法修复一些错误的答案。例如，Common-Lisp给出了解决方案：
+
+#+BEGIN_SRC common-lisp
+(let ((*read-default-float-format* 'long-float))
+  (- (read-from-string "9999999999999999.0") (read-from-string "9999999999999998.0")))
+#+END_SRC
+
+Perl得到正确答案的方案：
+
+#+BEGIN_SRC perl
+perl -mMath::BigFloat -e 'print Math::BigFloat->new("9999999999999999.0")
+ - Math::BigFloat->new("9999999999999998.0");print "\n";'
+#+END_SRC
+
+使用这些方案需要有某种先见之明，因此不会在上面的表中考虑。
+
+我知道 =GoLang= 可以用下面的方法得到正确的答案：
+
+#+BEGIN_SRC go-lang
+fmt.Printf("%f\n", 9999999999999999.0-9999999999999998.0)
+#+END_SRC
+
+但是如果值是不可读的(不知道这句翻译的对不对)， =go= 就会对常量表达式使用任意精度，这对我来说是危险的。
+
+如果我没有列出您最喜欢的语言，或者您认为我用错误的方式减去两个数，请告诉我：[[mailto:geocar@sdf.lonestar.org][geocar@sdf.lonestar.org]]
+
+* 博主的话
+在翻译过程中深刻的体会到了我英语有多菜，这么短的文章居然花了我1个小时。
+
+因为这篇文章只列举了结果，没有解释为什么，所以我又去查了一下。
+这篇文章解释了原因：[[http://www.ruanyifeng.com/blog/2010/06/ieee_floating-point_representation.html][浮点数的二进制表示]]
+好奇的话可以看一下。
