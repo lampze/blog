@@ -23,7 +23,7 @@ chmod +x TIM.AppImage && ./TIM.AppImage
 项目地址：[[https://github.com/askme765cs/Wine-QQ-TIM][Wine-QQ-TIM]]
 作者把 =QQ= 和 =TIM= 用[[https://github.com/AppImage/AppImageKit][AppImageKit]]打包了，现在只需要下载打好的包，就能体验完整的 =QQ= 和 =TIM= 了。
 跟以前自己安装 =wine= 比起来，真是省心太多了。
-
+{{{TEASER_END}}}
 
 * 问题解决
 列出一些我安装时发生的问题，我的系统为 =gentoo=
