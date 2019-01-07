@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Mon, 07 Jan 2019 03:47:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-org280d372" class="outline-2"&gt;
-&lt;h2 id="org280d372"&gt;前言&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org280d372"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Mon, 07 Jan 2019 03:48:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-org5961425" class="outline-2"&gt;
+&lt;h2 id="org5961425"&gt;前言&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5961425"&gt;
 &lt;p&gt;
 原文链接：&lt;a href="http://geocar.sdf1.org/numbers.html"&gt;点击跳转&lt;/a&gt;&lt;br&gt;
 发现方式：&lt;a href="https://news.ycombinator.com"&gt;Hacker News&lt;/a&gt;&lt;br&gt;
@@ -9,9 +9,9 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org7eb6e10" class="outline-2"&gt;
-&lt;h2 id="org7eb6e10"&gt;正文&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7eb6e10"&gt;
+&lt;div id="outline-container-org533c251" class="outline-2"&gt;
+&lt;h2 id="org533c251"&gt;正文&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org533c251"&gt;
 &lt;p&gt;
 &lt;b&gt;一个简单的问题：&lt;/b&gt;&lt;br&gt;
 &lt;/p&gt;
@@ -24,127 +24,7 @@
 &lt;p&gt;
 您最喜欢的语言能给出正确的答案吗？&lt;br&gt;
 &lt;/p&gt;
-
-&lt;style&gt;
-table[Attributes Style] {
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    -webkit-border-horizontal-spacing: 8px;
-    -webkit-border-vertical-spacing: 8px;
-}
-table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: grey;
-}
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-th {
-    text-align: right;
-    vertical-align: top;
-    font-weight: bold;
-}
-td {
-    font-family: monospace;
-}
-td, th {
-    display: table-cell;
-    vertical-align: inherit;
-    border: none;
-}
-td span, .w {
-    color: red;
-    font-weight: bold;
-}
-&lt;/style&gt;
-&lt;table border="0" cellspacing="8"&gt;&lt;tbody&gt;
-&lt;tr&gt;&lt;th&gt;Ruby:&lt;/th&gt;&lt;td&gt;irb(main):001:0&amp;gt; 9999999999999999.0 - 9999999999999998.0&lt;br&gt;&lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Java:&lt;/th&gt;&lt;td&gt;public class Foo{public static void main(String args[]){System.out.println(9999999999999999.0-9999999999999998.0);}}&lt;br&gt;&lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Python:&lt;/th&gt;&lt;td&gt;&amp;gt;&amp;gt;&amp;gt; 9999999999999999.0 - 9999999999999998.0&lt;br&gt;&lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Rebol:&lt;/th&gt;&lt;td&gt;&amp;gt;&amp;gt; 9999999999999999.0 - 9999999999999998.0&lt;br&gt;== &lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Haskell:&lt;/th&gt;&lt;td&gt;Prelude&amp;gt; 9999999999999999.0 - 9999999999999998.0&lt;br&gt;&lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;TCL:&lt;/th&gt;&lt;td&gt;% expr "9999999999999999.0-9999999999999998.0"&lt;br&gt;&lt;span&gt;0.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Emacs Lisp:&lt;/th&gt;&lt;td&gt;ELISP&amp;gt; (- 9999999999999999.0 9999999999999998.0)&lt;br&gt;&lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Common–Lisp:&lt;/th&gt;&lt;td&gt;[1]&amp;gt; (- 9999999999999999.0 9999999999999998.0)&lt;br&gt;&lt;span&gt;0.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Maxima:&lt;/th&gt;&lt;td&gt;(%i1) 9999999999999999.0-9999999999999998.0;&lt;br&gt;(%o1)                                &lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Google:&lt;/th&gt;&lt;td&gt;&lt;a class="w" rel="nofollow,noindex" target="_new" href="http://www.google.com/search?q=9999999999999999.0-9999999999999998.0"&gt;&lt;span&gt;0&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;K/Q:&lt;/th&gt;&lt;td&gt;q)9999999999999999.0-9999999999999998.0&lt;br&gt;&lt;span&gt;2f&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;R:&lt;/th&gt;&lt;td&gt;&amp;gt; 9999999999999999.0-9999999999999998.0&lt;br&gt;[1] &lt;span&gt;2&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Erlang:&lt;/th&gt;&lt;td&gt;1&amp;gt; 9999999999999999.0-9999999999999998.0 .&lt;br&gt;&lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;C:&lt;/th&gt;&lt;td&gt;main(){printf("%lf\n",(double)9999999999999999.0-9999999999999998.0);}&lt;br&gt;&lt;span&gt;2.000000&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;AWK:&lt;/th&gt;&lt;td&gt;$ awk 'END{print 9999999999999999.0-9999999999999998.0}'&amp;lt;/dev/null&lt;br&gt;&lt;span&gt;2&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;GoLang:&lt;/th&gt;&lt;td&gt;var a = 9999999999999999.0; var b = 9999999999999998.0; fmt.Printf("%f\n", a-b)&lt;br&gt;&lt;span&gt;2.000000&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Perl:&lt;/th&gt;&lt;td&gt;$ perl -e 'print 9999999999999999.0-9999999999999998.0;print "\n";'&lt;br&gt;&lt;span&gt;2.0&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Perl6:&lt;/th&gt;&lt;td&gt;$ perl6 -e 'print 9999999999999999.0-9999999999999998.0;print "\n";'&lt;br&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th&gt;Wolfram:&lt;/th&gt;&lt;td&gt;&lt;a class="w" rel="nofollow,noindex" target="_new" href="https://www.wolframalpha.com/input/?i=9999999999999999.0-9999999999999998.0"&gt;&lt;b&gt;1&lt;/b&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p&gt;
-一些结果让我感到惊讶。他们让你感到大吃一惊吗？&lt;br&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-请注意，可以使用特殊的方法修复一些错误的答案。例如，Common-Lisp给出了解决方案：&lt;br&gt;
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(let ((*read-default-float-format* 'long-float))
-  (- (read-from-string "9999999999999999.0") (read-from-string "9999999999999998.0")))
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Perl得到正确答案的方案：&lt;br&gt;
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;perl&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nn"&gt;mMath::&lt;/span&gt;&lt;span class="n"&gt;BigFloat&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="s"&gt;'print Math::BigFloat-&amp;gt;new("9999999999999999.0")&lt;/span&gt;
-&lt;span class="s"&gt; - Math::BigFloat-&amp;gt;new("9999999999999998.0");print "\n";'&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-使用这些方案需要有某种先见之明，因此不会在上面的表中考虑。&lt;br&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-我知道 &lt;code&gt;GoLang&lt;/code&gt; 可以用下面的方法得到正确的答案：&lt;br&gt;
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;fmt.Printf("%f\n", 9999999999999999.0-9999999999999998.0)
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-但是如果值是不可读的(不知道这句翻译的对不对)， &lt;code&gt;go&lt;/code&gt; 就会对常量表达式使用任意精度，这对我来说是危险的。&lt;br&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-如果我没有列出您最喜欢的语言，或者您认为我用错误的方式减去两个数，请告诉我：&lt;a href="mailto:geocar@sdf.lonestar.org"&gt;geocar@sdf.lonestar.org&lt;/a&gt;&lt;br&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org0bc12f9" class="outline-2"&gt;
-&lt;h2 id="org0bc12f9"&gt;博主的话&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0bc12f9"&gt;
-&lt;p&gt;
-在翻译过程中深刻的体会到了我英语有多菜，这么短的文章居然花了我1个小时。&lt;br&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-因为这篇文章只列举了结果，没有解释为什么，所以我又去查了一下。&lt;br&gt;
-但只找到了浮点数产生这种类型错误的原因，整数产生问题的原因还没找到。&lt;br&gt;
-研究出来后我再写篇博客吧&lt;br&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</guid><pubDate>Sun, 06 Jan 2019 11:50:51 GMT</pubDate></item><item><title>翻译计划</title><link>https://lampze.github.io/blog/posts/translation-plan/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-orgb8bc78b" class="outline-2"&gt;
+&lt;p&gt;&lt;a href="https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/"&gt;阅读更多…&lt;/a&gt; (剩余 1 分钟去阅读)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</guid><pubDate>Sun, 06 Jan 2019 11:50:51 GMT</pubDate></item><item><title>翻译计划</title><link>https://lampze.github.io/blog/posts/translation-plan/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-orgb8bc78b" class="outline-2"&gt;
 &lt;h2 id="orgb8bc78b"&gt;规划&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgb8bc78b"&gt;
 &lt;p&gt;
