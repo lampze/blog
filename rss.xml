@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Mon, 07 Jan 2019 03:48:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-org5961425" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Fri, 11 Jan 2019 12:38:14 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub 用户状态</title><link>https://lampze.github.io/blog/posts/github-user-status/</link><dc:creator>lampze</dc:creator><description>&lt;div id="outline-container-org96c3cd9" class="outline-2"&gt;
+&lt;h2 id="org96c3cd9"&gt;瞎BB&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org96c3cd9"&gt;
+&lt;p&gt;
+经常逛 &lt;code&gt;GitHub&lt;/code&gt; 的同学应该都注意到可以更改自己当前的状态了吧，这个小功能我觉得还是很不错的。以前看到自己关注的国外开发者突然几个星期没有绿点了，难免会觉得他是不是出事了。为什么感觉 &lt;code&gt;GitHub&lt;/code&gt; 越来越向交友软件靠近了呢？&lt;br&gt;
+话说自从微软收购 &lt;code&gt;GitHub&lt;/code&gt; 后做了不少修改呀，私有仓库还免费了。&lt;br&gt;
+&lt;img src="https://user-images.githubusercontent.com/96793/50911439-e324bc80-13fd-11e9-81dd-145d2e7fdb2f.gif" alt="50911439-e324bc80-13fd-11e9-81dd-145d2e7fdb2f.gif"&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>https://lampze.github.io/blog/posts/github-user-status/</guid><pubDate>Fri, 11 Jan 2019 12:17:13 GMT</pubDate></item><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-org5961425" class="outline-2"&gt;
 &lt;h2 id="org5961425"&gt;前言&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org5961425"&gt;
 &lt;p&gt;

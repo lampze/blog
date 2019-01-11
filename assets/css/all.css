@@ -8995,6 +8995,11 @@ h1, h2, h3, h4 {
     font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, sans-serif;
 }
 
+p img {
+    max-width: 100%;
+    padding: 3px;
+}
+
 table {
     margin: auto;
     margin-top: 15px;

@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://lampze.github.io/blog/archive.html</loc>
-  <lastmod>2019-01-06T11:53:00Z</lastmod>
+  <lastmod>2019-01-11T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://lampze.github.io/blog/categories/</loc>
@@ -40,6 +40,10 @@
  <url>
   <loc>https://lampze.github.io/blog/posts/gentoo-install-pandoc/</loc>
   <lastmod>2018-11-09T12:44:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://lampze.github.io/blog/posts/github-user-status/</loc>
+  <lastmod>2019-01-11T12:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://lampze.github.io/blog/posts/install-tim-in-linux/</loc>
