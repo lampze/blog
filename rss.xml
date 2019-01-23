@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Fri, 11 Jan 2019 12:57:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-org5961425" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lampze's blog</title><link>https://lampze.github.io/blog/</link><description>This is a blog for me</description><atom:link href="https://lampze.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2019 &lt;a href="mailto:1229408499@qq.com"&gt;lampze&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Jan 2019 12:36:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>有毒的项目</title><link>https://lampze.github.io/blog/posts/funny-website/</link><dc:creator>lampze</dc:creator><description>&lt;p&gt;
+刚发现一个特别有毒的 &lt;code&gt;github&lt;/code&gt; 项目：&lt;a href="https://github.com/komeiji-satori/Dress"&gt;Dress&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+我什么都不想说，自己去看看就知道了。
+&lt;/p&gt;
+
+&lt;p&gt;
+虽然过程有点不靠谱，但确实能熟悉 &lt;code&gt;git&lt;/code&gt; 的基本操作。
+&lt;/p&gt;</description><guid>https://lampze.github.io/blog/posts/funny-website/</guid><pubDate>Wed, 23 Jan 2019 12:25:58 GMT</pubDate></item><item><title>[翻译] 9999999999999999.0 - 9999999999999998.0</title><link>https://lampze.github.io/blog/posts/99999999999999990-99999999999999980/</link><dc:creator>lampze</dc:creator><description>&lt;div&gt;&lt;div id="outline-container-org5961425" class="outline-2"&gt;
 &lt;h2 id="org5961425"&gt;前言&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org5961425"&gt;
 &lt;p&gt;
